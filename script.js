@@ -45,9 +45,47 @@ year = 1991;
 console.log(typeof year);
 
 console.log(typeof null);
-*/
+
 let edad = 30;
 edad = 31;
 
 const anioDeNacimiento = 1991;
-anioDeNacimiento = 1990;
+// anioDeNacimiento = 1990;
+// const trabajo;
+
+var trabajo = 'programador';
+trabajo = 'profesor';
+
+apellido = 'Quezada';
+console.log(apellido);
+*/
+
+//Operadores matematicos
+const ahora = 2021;
+const edadDeEdney = ahora - 2004;
+const edadDeStephanie = ahora - 1995;
+console.log(edadDeEdney, edadDeStephanie);
+
+console.log(edadDeEdney * 2, edadDeEdney / 10, 2 ** 3);
+//2 ** 3 significa 2 elevado a 3 = 2 * 2 * 2
+
+const nombre = 'Edney';
+const apellido = 'Quezada';
+console.log(nombre + ' ' + apellido);
+
+//Operadores de asignacion
+let x = 10 + 5;
+x += 10; // x = x + 10 = 25
+x *= 4; // x = x * 4 = 100
+x++; // x = x + 1
+x--;
+x--;
+console.log(x);
+
+//Operadores de comparacion
+console.log(edadDeStephanie > edadDeEdney); // >, <, >=, <=
+console.log(edadDeEdney >= 18);
+
+const esMayor = edadDeEdney >= 18;
+
+console.log(ahora - 1995 > ahora - 2004);
