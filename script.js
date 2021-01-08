@@ -58,7 +58,6 @@ trabajo = 'profesor';
 
 apellido = 'Quezada';
 console.log(apellido);
-*/
 
 //Operadores matematicos
 const ahora = 2021;
@@ -89,3 +88,17 @@ console.log(edadDeEdney >= 18);
 const esMayor = edadDeEdney >= 18;
 
 console.log(ahora - 1995 > ahora - 2004);
+*/
+
+const ahora = 2021;
+const edadDeEdney = ahora - 2004;
+const edadDeStephanie = ahora - 1995;
+
+console.log(ahora - 2004 > ahora - 1995);
+
+let x, y;
+x = y = 25 - 10 - 5; // x = y = 10 
+console.log(x, y);
+
+const promedioEdad = (edadDeEdney + edadDeStephanie) / 2
+console.log(edadDeEdney, edadDeStephanie, promedioEdad);
