@@ -88,7 +88,6 @@ console.log(edadDeEdney >= 18);
 const esMayor = edadDeEdney >= 18;
 
 console.log(ahora - 1995 > ahora - 2004);
-*/
 
 const ahora = 2021;
 const edadDeEdney = ahora - 2004;
@@ -102,3 +101,26 @@ console.log(x, y);
 
 const promedioEdad = (edadDeEdney + edadDeStephanie) / 2
 console.log(edadDeEdney, edadDeStephanie, promedioEdad);
+*/
+
+const primerNombre = 'Edney'
+const trabajo = 'Agente de AYR'
+const añoDeNacimiento = 1996;
+const año = 2021;
+
+const edney = 'Me llamo ' + primerNombre + ', un ' + trabajo + ' de ' + (año - añoDeNacimiento) + ' años de edad!';
+console.log(edney);
+
+const edneyNuevo = `Me llamo ${primerNombre}, un ${trabajo} de ${año - añoDeNacimiento} años de edad!`;
+console.log(edneyNuevo);
+
+console.log(`Solo un String normal`);
+
+console.log('Strings con \n\
+multiples \n\
+lineas');
+
+console.log(`Strings con 
+multiples
+lineas`);
+
