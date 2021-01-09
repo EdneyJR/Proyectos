@@ -22,27 +22,23 @@ lenguaje = "Español";
 
 //LECTURE: Basic Operators
 console.log(poblacion / 2);
-poblacion ++;
+// poblacion++;
 console.log(poblacion);
 console.log(poblacion > 6000000);
 console.log(poblacion < 33000000);
-const descripcion = pais + " esta en el continente " + continente + " y sus " + poblacion + " de personas hablan " + lenguaje;
+const descripcion = `${pais} esta en el continente ${continente} y sus ${poblacion} de personas hablan ${lenguaje}`;
+
 console.log(descripcion);
 
+if (poblacion > 33000000) {
+    console.log(`La poblacion de ${pais} esta por encima del promedio`);
+} else {
+    console.log(`La poblacion de ${pais} esta ${(33000000 - poblacion) / 2} por debajo del promedio`);
+}
 
-//Coding Challenge #1
-// Data 1
-const markMass = 78, markHeight = 1.69, johnMass = 92, johnHeight = 1.95;
-const markBMI = markMass / markHeight ** 2, johnBMI = johnMass / johnHeight ** 2;
-const markHigherBMI = markBMI > johnBMI;
-console.log(markBMI, johnBMI);
-console.log(markHigherBMI);
-
-//Data 2
-const markMass = 95, markHeight = 1.88, johnMass = 85, johnHeight = 1.76;
-const markBMI = markMass / (markHeight * markHeight), johnBMI = johnMass / (johnHeight * johnHeight);
-const markHigherBMI = markBMI > johnBMI;
-console.log(markBMI, johnBMI);
-console.log(markHigherBMI);
+'9' - '5'; // = 4 Number
+'19' - '13' + '17'; // = 617 String
+'19' - '13' + 17; // = 23 Number
+'123' < 57; // = false Boolean
+5 + 6 + '4' + 9 - 4 - 2; // = 1143 Number
 */
-
