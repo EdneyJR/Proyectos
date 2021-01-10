@@ -178,7 +178,6 @@ if (markBMI > johnBMI) {
 } else {
     console.log(`El BMI de John (${johnBMI}) es mas grande que el BMI de Mark (${markBMI})!`);
 }
-*/
 
 //type conversion
 const inputYear = '1991';
@@ -199,3 +198,154 @@ console.log('23' > '18');
 let n = '1' + 1;
 n = n - 1;
 console.log(n);
+
+// 5 valores falsables: 0, '', undefined, null, NaN
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Edney'));
+console.log(Boolean({}));
+console.log(Boolean(''));
+
+const money = 100;
+if (money) {
+    console.log(`No lo gastes todo!`);
+} else {
+    console.log(`Deberias conseguir trabajo`);
+}
+
+let altura = 0;
+if (altura) {
+    console.log(`Siii! altura esta definida`);
+} else {
+    console.log(`Altura no esta definida`);
+}
+
+const age = '18';
+if (age === 18) console.log(`Te haz convertido en adulto, {estricto`);
+
+if (age == 18) console.log(`Te haz convertido en adulto, {loose`);
+
+const favorito = Number(prompt(`Cual es tu numero favorito`));
+console.log(favorito);
+console.log(typeof favorito);
+
+if (favorito === 2) {
+    console.log(`Genial 2 es un numero fantastico`);
+} else if (favorito === 7) {
+    console.log(`7 tambien es un numero genial`);
+} else if (favorito === 9) {
+    console.log(`9 tambien es un numero genial`);
+} else {
+    console.log(`Este numero no es ni 2 ni 7 ni 9`);
+}
+
+if (favorito !== 2) console.log(`Por que no 2?`);
+
+
+const hasDriversLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+// if (hasDriversLicense && hasGoodVision) {
+//     console.log(`Stephanie es capaz de conducir🚲`);
+// } else {
+//     console.log(`Stephanie no puede conducir🚳`)
+// }
+
+const isTired = false; // C
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+    console.log(`Stephanie es capaz de conducir🚲`);
+} else {
+    console.log(`Stephanie no puede conducir🚳`)
+}
+
+//Coding Challenge #3
+//Data 1
+// const firtDolphinsScore = 96;
+// const secondDolphinsScore = 108;
+// const thirdDolphinsScore = 89;
+
+// const firtKoalasScore = 88;
+// const secondKoalasScore = 91;
+// const thirdKoalasScore = 110;
+
+//Data 2
+// const firtDolphinsScore = 97;
+// const secondDolphinsScore = 112;
+// const thirdDolphinsScore = 101;
+
+// const firtKoalasScore = 109;
+// const secondKoalasScore = 95;
+// const thirdKoalasScore = 123;
+
+//Data 3
+const firtDolphinsScore = 97;
+const secondDolphinsScore = 112;
+const thirdDolphinsScore = 80;
+
+const firtKoalasScore = 109;
+const secondKoalasScore = 95;
+const thirdKoalasScore = 50;
+
+const dolphinsAverage = (firtDolphinsScore + secondDolphinsScore + thirdDolphinsScore) / 3;
+const koalasAverage = (firtKoalasScore + secondKoalasScore + thirdKoalasScore) / 3;
+console.log(dolphinsAverage, koalasAverage);
+
+if (dolphinsAverage > koalasAverage && dolphinsAverage >= 100) {
+    console.log(`Los Delfines ganan con un promedio de ${dolphinsAverage} aqui tienen su trofeo! 🐬🏆`);
+} else if (dolphinsAverage === koalasAverage && dolphinsAverage >= 100) {
+    console.log(`Hay un empate con un promedio de ${dolphinsAverage} para los delfines y ${koalasAverage} para los Koalas, ambos equipos reciben sus trofeos 🐬🐨🏆🏆`);
+} else if (koalasAverage > dolphinsAverage && koalasAverage >= 100) {
+    console.log(`Los Koalas ganan con un promedio de ${koalasAverage} su trofeo! 🐨🏆`);
+} else {
+    console.log(`Ninguno de los equipos obtuvo el minimo de 100 puntos requerido 😞`)
+}
+
+const day = 'lunes';
+
+switch (day) {
+    case 'lunes': // day === 'lunes'
+        console.log('Planear la estructra del curso');
+        console.log('Ir a un meeting de codificacion');
+        break;
+    case 'martes':
+        console.log('Preparar teoria');
+        break;
+    case 'miercoles':
+    case 'jueves':
+        console.log('Escribir ejemplos de codigo');
+        break
+    case 'viernes':
+        console.log('Grabar videos');
+        break
+    case 'sabado':
+    case 'domingo':
+        console.log('Disfrutar el finde!');
+        break
+    default:
+        console.log('No es un dia valido');
+
+}
+
+if (day === 'lunes') {
+    console.log('Planear la estructra del curso');
+    console.log('Ir a un meeting de codificacion');
+} else if (day === 'martes') {
+    console.log('Preparar teoria');
+} else if (day === 'miercoles' || day === 'jueves') {
+    console.log('Escribir ejemplos de codigo');
+} else if (day === 'viernes') {
+    console.log('Grabar videos');
+} else if (day === 'sabado' || day === 'domingo') {
+    console.log('Disfrutar el finde!');
+} else {
+    console.log('No es un dia valido');
+}
+*/
+

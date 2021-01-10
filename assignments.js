@@ -17,7 +17,7 @@ console.log(typeof lenguaje);
 
 
 //LECTURE: let, const and var
-lenguaje = "Español";
+lenguaje = "español";
 //continente = "Europeo";
 
 //LECTURE: Basic Operators
@@ -36,9 +36,48 @@ if (poblacion > 33000000) {
     console.log(`La poblacion de ${pais} esta ${(33000000 - poblacion) / 2} por debajo del promedio`);
 }
 
-'9' - '5'; // = 4 Number
-'19' - '13' + '17'; // = 617 String
-'19' - '13' + 17; // = 23 Number
-'123' < 57; // = false Boolean
-5 + 6 + '4' + 9 - 4 - 2; // = 1143 Number
+console.log('9' - '5'); // = 4 Number
+console.log('19' - '13' + '17'); // = 617 String
+console.log('19' - '13' + 17); // = 23 Number
+console.log('123' < 57); // = false Boolean
+console.log(5 + 6 + '4' + 9 - 4 - 2); // = 1143 Number
+
+
+// const numNeighbours = Number(prompt('How many neighbour countries does your country have?'),);
+
+// if (numNeighbours === 1) {
+//     console.log('Only 1 border!');
+// } else if (numNeighbours > 1) {
+//     console.log('More than 1 border');
+// } else {
+//     console.log('No borders')
+// }
+
+if (lenguaje === 'ingles' && poblacion < 50000000 && !esIsla) {
+    console.log(`Stephanie, deberias vivir en ${pais}😍`);
+} else {
+    console.log(`Stephanie, ${pais} no cumple con tus exigencias! 😢`)
+}
+
+switch (lenguaje) {
+    case 'chino':
+    case 'mandarin':
+        console.log('El Mayor numero de hablantes nativos');
+        break;
+    case 'español':
+        console.log('El 2do lugar en numero de hablantes nativos');
+        break;
+    case 'ingles':
+        console.log('3er lugar');
+        break;
+    case 'hindu':
+        console.log('Numero 4');
+        break;
+    case 'arabico':
+        console.log('El quinto idioma mas hablado');
+        break;
+    default:
+        console.log('Tambien es un lenguaje asombroso :D');
+}
+
 */
