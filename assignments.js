@@ -80,4 +80,6 @@ switch (lenguaje) {
         console.log('Tambien es un lenguaje asombroso :D');
 }
 
+
+console.log(`La poblacion de ${pais} esta ${poblacion > 33000000 ? 'por encima del promedio' : 'por debajo del promedio'}`);
 */
