@@ -347,5 +347,55 @@ if (day === 'lunes') {
 } else {
     console.log('No es un dia valido');
 }
+
+
+//Expresions
+3 + 4
+1991
+true && false && !false
+
+//Staments
+if (23 > 10) {
+    const str = '23 is bigger';
+}
+
+const me = 'Edney'
+console.log(`I'm ${2037 - 1991} years old ${me} `)
+
+
+const age = 23;
+// age >= 18 ? console.log('Me gustaria beber vino🍷') : console.log('Me gustaria beber agua💧');
+
+const drink = age >= 18 ? 'vino🍷' : 'agua💧';
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+    drink2 = 'vino🍷';
+} else {
+    drink2 = 'agua💧';
+}
+console.log(drink2);
+
+console.log(`Me gusta beber ${age >= 18 ? 'vino🍷' : 'agua💧'}`);
+
+//Mi largo codigo T-T
+// let tip;
+
+// const bill = 275;
+// const bill2 = 40;
+// const bill3 = 430;
+
+// console.log(`La cuenta fue de ${bill}, la propina fue de ${bill >= 50 && bill <= 300 ? tip = (bill * 15) / 100 : tip = (bill * 20) / 100} y el valor total es: ${bill + tip}`);
+
+// console.log(`La cuenta fue de ${bill2}, la propina fue de ${bill2 >= 50 && bill2 <= 300 ? tip = (bill2 * 15) / 100 : tip = (bill2 * 20) / 100} y el valor total es: ${bill2 + tip}`);
+
+// console.log(`La cuenta fue de ${bill3}, la propina fue de ${bill3 >= 50 && bill3 <= 300 ? tip = (bill3 * 15) / 100 : tip = (bill3 * 20) / 100} y el valor total es: ${bill3 + tip}`);
+
+//El sencillo de Jonas XD
+const bill = 430;
+const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+console.log(`La cuenta fue de ${bill}, la propina fue de ${tip}, y el total fue de ${bill + tip}`);
 */
+
 
