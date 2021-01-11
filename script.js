@@ -398,4 +398,4 @@ const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 console.log(`La cuenta fue de ${bill}, la propina fue de ${tip}, y el total fue de ${bill + tip}`);
 */
 
-
+// Aqui termina los fundamentos 1 era parte
