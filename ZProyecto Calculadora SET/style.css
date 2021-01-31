@@ -19,4 +19,31 @@ body {
   width: 300px;
   padding: 10px;
   margin-top: 5px;
+  grid-column-start: 1;
+  grid-column-end: one;
+  grid-row-start: row1-start;
+  grid-row-end: 1;
+} 
+
+.igual{
+  grid-column-start: 4;
+  grid-column-end: span col4-start;
+  grid-row-start: 6;
+  grid-row-end: span 
+}
+
+.cuadro {
+  display: grid;
+  grid-template-columns: 35px 35px 35px 35px;
+  grid-gap: 6px;
+  background-color: #2196F3;
+  padding: 5px;
+  width: 195px;
+  }
+
+.cuadro > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
 }
